@@ -1,0 +1,70 @@
+@import"grid";
+@import"variables";
+body {
+    background: $moradoClaro;
+    margin: 0;
+}
+
+.nav {
+    background: $moradoOscuro;
+    height: 5%;
+    text-align: center;
+    padding: 2%;
+    &__ul {
+        &__li {
+            display: inline;
+            margin: 5%;
+            color: $blanco;
+            &:hover {
+                color: $moradoLetras;
+                background: $rosaBase;
+            }
+        }
+    }
+}
+
+.imagenes {
+    display: inline-flex;
+    &__panda {
+        width: 25%;
+        &--opaco {
+            &:hover {
+                opacity: 0.4;
+            }
+        }
+        &__img {
+            width: 100%;
+            padding: 5%;
+        }
+    }
+}
+
+.botones {
+    display: inline-flex;
+    justify-content: center;
+    &__btn {
+        background: $moradoOscuro;
+        color: $moradoLetras;
+        width: 50%;
+        height: 5vh;
+        margin: 0 3%;
+        &--activo {
+            &:hover {
+                background: $rosaBase;
+            }
+        }
+    }
+}
+
+.textos {
+    display: inline-flex;
+    &__textoIndividual {
+        padding: 3%;
+        &--activo {
+            &:hover {
+                background: $rosaBase;
+            }
+        }
+        
+    }
+}

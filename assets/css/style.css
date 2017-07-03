@@ -1,0 +1,153 @@
+/*---Inicio grid en css---*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.templateRow, .row:before, .row:after {
+  content: " ";
+  display: table; }
+
+.row {
+  width: 100%; }
+  .row:after {
+    clear: both; }
+
+/*Declaracion  de la clase col */
+[class*="col-"] {
+  min-height: 7px;
+  padding: 12px;
+  float: left; }
+
+/*Declaracion  de la clase offset */
+[class*="offset-"] {
+  min-height: 7px;
+  float: left; }
+
+/*funciones en scss-- estructura grid en css*/
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+/*------Funciones en Saas de Offset, columnas offset en CSS ------*/
+.offset-1 {
+  margin-left: 8.33333%; }
+
+.offset-2 {
+  margin-left: 16.66667%; }
+
+.offset-3 {
+  margin-left: 25%; }
+
+.offset-4 {
+  margin-left: 33.33333%; }
+
+.offset-5 {
+  margin-left: 41.66667%; }
+
+.offset-6 {
+  margin-left: 50%; }
+
+.offset-7 {
+  margin-left: 58.33333%; }
+
+.offset-8 {
+  margin-left: 66.66667%; }
+
+.offset-9 {
+  margin-left: 75%; }
+
+.offset-10 {
+  margin-left: 83.33333%; }
+
+.offset-11 {
+  margin-left: 91.66667%; }
+
+.offset-12 {
+  margin-left: 100%; }
+
+/*---Fin funciones en scss-- grid en css---*/
+body {
+  background: #B2A3B5;
+  margin: 0; }
+
+.nav {
+  background: #91818A;
+  height: 5%;
+  text-align: center;
+  padding: 2%; }
+  .nav__ul__li {
+    display: inline;
+    margin: 5%;
+    color: #fff; }
+    .nav__ul__li:hover {
+      color: #401898;
+      background: #EBDCCB; }
+
+.imagenes {
+  display: inline-flex; }
+  .imagenes__panda {
+    width: 25%; }
+    .imagenes__panda--opaco:hover {
+      opacity: 0.4; }
+    .imagenes__panda__img {
+      width: 100%;
+      padding: 5%; }
+
+.botones {
+  display: inline-flex;
+  justify-content: center; }
+  .botones__btn {
+    background: #91818A;
+    color: #401898;
+    width: 50%;
+    height: 5vh;
+    margin: 0 3%; }
+    .botones__btn--activo:hover {
+      background: #EBDCCB; }
+
+.textos {
+  display: inline-flex; }
+  .textos__textoIndividual {
+    padding: 3%; }
+    .textos__textoIndividual--activo:hover {
+      background: #EBDCCB; }
+
+/*# sourceMappingURL=style.css.map */
